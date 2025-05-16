@@ -23,7 +23,7 @@ type BudgetEntry = {
 };
 
 export default function BudgetTracker() {
-  const [event, setEvent] = useState("poruwa");
+  const [event, setEvent] = useState("Poruwa");
   const [entries, setEntries] = useState<BudgetEntry[]>([]);
   const [form, setForm] = useState<Omit<BudgetEntry, "id">>({
     item: "",
@@ -91,8 +91,8 @@ export default function BudgetTracker() {
           onChange={(e) => setEvent(e.target.value)}
           className="border rounded px-2 py-1"
         >
-          <option value="poruwa">Poruwa</option>
-          <option value="reception">Reception</option>
+          <option value="Poruwa">Poruwa</option>
+          <option value="Reception">Reception</option>
         </select>
       </div>
 

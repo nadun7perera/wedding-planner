@@ -9,7 +9,7 @@ import {
 } from "firebase/firestore"
 
 export default function VendorForm() {
-  const [selectedEvent, setSelectedEvent] = useState<"poruwa"|"reception">("poruwa")
+  const [selectedEvent, setSelectedEvent] = useState<"Poruwa"|"Reception">("Poruwa")
   const [name, setName]       = useState("")
   const [category, setCategory]       = useState("")
   const [contact, setContact] = useState("")
@@ -49,12 +49,12 @@ export default function VendorForm() {
         <select
           value={selectedEvent}
           onChange={e =>
-            setSelectedEvent(e.target.value as "poruwa"|"reception")
+            setSelectedEvent(e.target.value as "Poruwa"|"Reception")
           }
           className="w-full border rounded p-2"
         >
-          <option value="poruwa">Poruwa</option>
-          <option value="reception">Reception</option>
+          <option value="Poruwa">Poruwa</option>
+          <option value="Reception">Reception</option>
         </select>
       </div>
 

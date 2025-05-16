@@ -54,12 +54,12 @@ export default function VendorList() {
           id="event"
           value={selectedEvent}
           onChange={(e) =>
-            setSelectedEvent(e.target.value as "poruwa" | "reception")
+            setSelectedEvent(e.target.value as "Poruwa" | "Reception")
           }
           className="border rounded px-3 py-2"
         >
-          <option value="poruwa">Poruwa</option>
-          <option value="reception">Reception</option>
+          <option value="Poruwa">Poruwa</option>
+          <option value="Reception">Reception</option>
         </select>
       </div>
 
