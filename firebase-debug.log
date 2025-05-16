@@ -1,0 +1,41 @@
+[debug] [2025-05-16T22:20:41.192Z] ----------------------------------------------------------------------
+[debug] [2025-05-16T22:20:41.194Z] Command:       /opt/homebrew/Cellar/node/22.9.0_1/bin/node /opt/homebrew/bin/firebase init hosting
+[debug] [2025-05-16T22:20:41.194Z] CLI Version:   14.4.0
+[debug] [2025-05-16T22:20:41.194Z] Platform:      darwin
+[debug] [2025-05-16T22:20:41.194Z] Node Version:  v22.9.0
+[debug] [2025-05-16T22:20:41.194Z] Time:          Sat May 17 2025 00:20:41 GMT+0200 (Central European Summer Time)
+[debug] [2025-05-16T22:20:41.194Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-16T22:20:41.198Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-16T22:20:41.198Z] > authorizing via signed-in user (nadunnavishka@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/nadunperera/Documents/Personal_Projects/wedding-planner
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-05-16T22:21:54.661Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/@inquirer/core/dist/commonjs/lib/create-prompt.js:100:37)
+    at Interface.emit (node:events:519:28)
+    at Interface.emit (node:domain:488:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1124:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:263:20)
+    at ReadStream.emit (node:events:531:35)
+    at ReadStream.emit (node:domain:488:12)
+    at emitKeys (node:internal/readline/utils:370:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.
