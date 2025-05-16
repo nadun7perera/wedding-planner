@@ -46,11 +46,22 @@ export default function VendorDetailsModal({
     onClose();
   };
 
-  const updateItem = (index: number, key: "item" | "quantity", value: any) => {
-    const updated = [...itemsRented];
-    updated[index] = { ...updated[index], [key]: value };
-    setItemsRented(updated);
-  };
+  // const updateItem = (index: number, key: "item" | "quantity", value: number) => {
+  //   const updated = [...itemsRented];
+  //   updated[index] = { ...updated[index], [key]: value };
+  //   setItemsRented(updated);
+  // };
+
+  const updateItem = (
+  index: number,
+  key: "item" | "quantity",
+  value: string | number
+) => {
+  const updated = [...itemsRented];
+  updated[index] = { ...updated[index], [key]: value };
+  setItemsRented(updated);
+};
+
 
   const addItem = () => {
     setItemsRented([...itemsRented, { item: "", quantity: 0 }]);
